@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="20dp">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="AI Screen Agent · DeepSeek" android:textSize="22sp" android:textStyle="bold"
+            android:paddingBottom="16dp"/>
+        <EditText android:id="@+id/etApiKey" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="DeepSeek API Key"
+            android:inputType="textPassword"/>
+        <Switch android:id="@+id/switchHand" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:checked="true"
+            android:text="Визуализация руки ИИ" android:layout_marginTop="12dp"/>
+        <Switch android:id="@+id/switchAvatar" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:checked="true"
+            android:text="Виджет Аватара ИИ"/>
+        <EditText android:id="@+id/etTask" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="Задача"
+            android:gravity="top|start" android:inputType="textMultiLine" android:minLines="3"
+            android:layout_marginTop="12dp"/>
+        <Button android:id="@+id/btnStart" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:text="Запустить Агента"
+            android:layout_marginTop="16dp"/>
+        <Button android:id="@+id/btnStop" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:text="Остановить"/>
+        <Button android:id="@+id/btnAccessibility" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:text="Службы Доступности"/>
+        <Button android:id="@+id/btnOverlayPermission" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:text="Разрешение оверлея"/>
+        <TextView android:id="@+id/tvStatus" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:text="Готов" android:layout_marginTop="16dp"/>
+    </LinearLayout>
+</ScrollView>
